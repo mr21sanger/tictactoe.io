@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: beige;
+}
+
+.container {
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.box {
+    width: 32vw;
+    height: 62vh;
+    background-color: bisque;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 2em;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    row-gap: 0.02em;
+    column-gap: 0.2em;
+
+}
+
+.box button {
+    width: 9vw;
+    height: 18vh;
+    border-radius: 0.5em;
+    margin: auto;
+    background-color: beige;
+    font-size: 4.5rem;
+    text-align: center;
+    color: red;
+    transition: all;
+    transition-duration: 0.5s;
+    border: 2px solid black;
+}
+
+.box button:focus {
+    background-color: rgb(255, 255, 193);
+    border: 4px solid black;
+
+}
+
+.optionBtn{
+    width: 9vw;
+    height: 7vh;
+    border-radius: 0.5em;
+    background-color: beige;
+    border: 3px solid black;
+    box-shadow: 2px 2px 10px black;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+}
+
+.gameBtn {
+    width: 12vw;
+    padding: 0em 0.3em;
+    font-size: 2rem;
+}
+
+.winner {
+    width: 100vw;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: black;
+    -webkit-text-stroke-width: 0.0005px;
+    -webkit-text-stroke-color: red;
+}
+
+.winner p {
+    font-size: 2.2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.score {
+    width: 100vw;
+    height: 30vh;
+}
+table{
+    margin: auto;
+    width: 100%;
+    height: 25vh;
+    color: blue;
+    text-align: center;
+    font-size: 2rem;
+    border: 2px solid black;
+    border-collapse: collapse;
+    box-shadow: 1px 2px 1px black , -0.2px -0.5px 1px black;
+}
+table td:nth-child(even){
+    color:red;
+    border-left: 2px solid black;
+}
+
+
+/* RESPONSIVENESS */
+
+/* IPAD RESPONSIVENESS */
+@media screen and (max-width:1340px) {
+    body {
+        background-color: beige;
+    }
+    .intro h1{
+        font-size: 3.5rem;
+    }
+
+    .box {
+        width: 88vw;
+        height: 59vh;
+    }
+
+    .box button {
+        width: 26vw;
+        height: 18vh;
+    }
+
+    
+    .option button{
+        width: 30vw;
+    }
+    table{
+        width: 80vw;
+    }
+}
+
+/* 
+MOBILE PHONE RESPONSIVENESS */
+@media screen and (max-width:600px) {
+    body {
+        background-color: beige;
+    }
+    .intro h1{
+        font-size: 3.5rem;
+    }
+
+    .box {
+        width: 95vw;
+        height: 59vh;
+    }
+
+    .box button {
+        width: 30vw;
+        height: 18vh;
+    }
+
+    .reset {
+        width: 34vw;
+        height: 7vh;
+    }
+    table{
+        width: 80vw;
+    }
+    .option{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    .option button{
+        width: 77vw;
+    }
+}
